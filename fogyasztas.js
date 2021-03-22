@@ -17,6 +17,9 @@ let autok = {
     automarka : "Citroen",
     fogyaszt : function (){
         console.log(autok.evjarat, "évjáratú", autok.automarka, "fogyasztasa",fogyasztasa_liter ,"liter/100km" )
+    },
+    garazs : function(utca){
+        console.log(autok.automarka, "garázsa", utca, "utcában található");
     }
 }
 autok.fogyaszt()
