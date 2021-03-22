@@ -9,13 +9,18 @@ while (tankolas > 1 && tankolas > 50){
     tankolas = prompt("Hány litert tankoltás?")
 }
 
+let fogyasztasa_oszto = km / 100
+let fogyasztasa_liter = tankolas / fogyasztasa_oszto
 
 let autok = {
     evjarat : 2000,
     automarka : "Citroen",
     fogyaszt : function (){
-        console.log(autok.evjarat, "évjáratú", autok.automarka, "fogyasztasa liter/100km" )
+        console.log(autok.evjarat, "évjáratú", autok.automarka, "fogyasztasa",fogyasztasa_liter ,"liter/100km" )
     }
 }
-
 autok.fogyaszt()
+
+if(tankolas > 20){
+    console.log("Nem sajnálod az üzemanyagot!")
+}
