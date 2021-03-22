@@ -36,4 +36,6 @@ else{
 
 autok.garazs("Kossuth")
 
-
+for (let i in autok){
+    console.log(autok[i]);
+}
